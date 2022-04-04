@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { ScoringComponent } from "./scoring/ScoringComponent";
+import { criteria as json_data } from "./stories/example-data/the-example";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScoringComponent 
+      criteria={json_data}
+      onSubmit={results => console.log(results)}
+      onCancel={draft => console.log(draft)}
+    />
   );
 }
 
