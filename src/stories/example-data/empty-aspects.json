@@ -1,4 +1,4 @@
-export const criteria = {
+{
   "name": "Verseny neve",
   "tasks": [
     {
@@ -32,4 +32,4 @@ export const criteria = {
       ]
     }
   ]
-};
+}

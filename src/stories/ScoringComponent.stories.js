@@ -1,11 +1,8 @@
-// Button.stories.js|jsx
-
 import React from 'react';
 import { ScoringComponent } from '../scoring/ScoringComponent';
-import { criteria as emptyCriteria } from './example-data/empty';
-import { criteria as emptyAspectsCriteria } from './example-data/empty-aspects';
-import { criteria as emptyTasksCriteria } from './example-data/empty-tasks';
-import { criteria as theExampleCriteria } from './example-data/the-example';
+import emptyAspectsCriteria from './example-data/empty-aspects.json';
+import emptyTasksCriteria from './example-data/empty-tasks.json';
+import theExampleCriteria from './example-data/the-example.json';
 
 export default {
   title: 'ScoringComponent',
@@ -21,11 +18,6 @@ export default {
 };
 
 const Template = (args) => <ScoringComponent {...args} />;
-
-export const TotalEmpty = Template.bind({});
-TotalEmpty.args = { 
-  criteria: emptyCriteria
-};
 
 export const EmptyTasks = Template.bind({});
 EmptyTasks.args = { 
